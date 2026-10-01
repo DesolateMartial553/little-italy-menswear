@@ -98,14 +98,31 @@
     .sticky-cta{display:flex;}
     footer{padding-bottom:100px;}
   }
+  .collection-contact{text-align:center; margin-top:28px;}
+  .occasion-panel{margin-top:40px; padding:28px; border:1px solid var(--line); background:var(--card); border-radius:4px;}
+  .occasion-panel h3{font-size:30px; margin-bottom:12px;}
+  .occasion-panel p{color:var(--muted); margin-bottom:20px; max-width:720px;}
+  .occasion-list{display:flex; flex-wrap:wrap; gap:10px 24px; list-style:none; color:var(--accent); margin-bottom:18px;}
+  .loc{display:flex; flex-direction:column; text-align:left; padding:24px; min-width:0;}
+  .loc h3{font-size:28px;}
+  .loc__details{margin:12px 0 20px; font-size:14px;}
+  .loc__details dt{font-weight:600; margin-top:12px;}
+  .loc__details dd{color:var(--muted); margin:4px 0 0;}
+  .loc__actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:auto;}
+  .loc__actions .btn{padding:12px 16px; font-size:12px;}
+  .owner h2{font-size:32px; line-height:1.2; margin-bottom:16px;}
+  .owner p{color:var(--muted); margin-bottom:16px;}
+  .contact-details{text-align:center; padding:24px 0;}
+  .contact-details p{color:var(--muted); margin-bottom:18px;}
+  .contact-details .btn{margin-bottom:16px;}
 </style>
 </head>
 <body>
 
 <div class="topbar">
   <div class="wrap topbar__inner">
-    <p>Now fitting for the season — book a fitting today</p>
-    <a href="tel:+441214780042">📞 0121 478 0042</a>
+    <p>Independent menswear · Northfield · Dudley · Wolverhampton</p>
+    <a href="tel:+441214780042">Northfield: 0121 478 0042</a>
   </div>
 </div>
 
@@ -132,12 +149,14 @@
 
 <section class="hero" id="top">
   <div class="hero__inner">
-    <span class="hero__tag">Est. Menswear · Three Locations</span>
-    <h1>Tailoring that<br><em>speaks for itself.</em></h1>
-    <p>Little Italy Menswear brings quality suits, formalwear and everyday style to Northfield, Dudley and Wolverhampton.</p>
+    <span class="hero__tag">Independent Menswear · Three Locations</span>
+    <h1>Your occasion.<br><em>Your kind of style.</em></h1>
+    <p>From a wedding invitation to your next interview, start with Little Italy Menswear in Northfield, Dudley or Wolverhampton.</p>
     <div class="hero__actions">
-      <a href="#collections" class="btn btn--accent">View Collections</a>
-      <a href="#locations" class="btn btn--outline">Find a Store</a>
+      <!-- PLACEHOLDER: confirm fitting appointments are available before publishing -->
+      <a href="tel:+441214780042" class="btn btn--accent">Call to book a fitting</a>
+      <!-- /PLACEHOLDER -->
+      <a href="#collections" class="btn btn--outline">View Collections</a>
     </div>
   </div>
 </section>
@@ -146,13 +165,24 @@
   <div class="wrap">
     <div class="section__head reveal">
       <h2>Our Collections</h2>
-      <p>Dressed right, for every occasion.</p>
+      <p>Start with the look you have in mind, then call Northfield to ask about current styles and sizes.</p>
     </div>
     <div class="collections reveal">
+      <!-- PLACEHOLDER: confirm suits, formalwear and smart-casual ranges with the business -->
       <div class="coll"><img src="https://images.pexels.com/photos/6050409/pexels-photo-6050409.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Fitting a tailored suit" loading="lazy" /><div class="coll__label">Suits<small>Two and three-piece, cut for how you actually wear it — not just how it looks on the rack.</small></div></div>
       <div class="coll"><img src="https://images.pexels.com/photos/6050435/pexels-photo-6050435.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Shopping for shirts and suits" loading="lazy" /><div class="coll__label">Formalwear<small>Shirts, ties and accessories picked to actually go with what you already own.</small></div></div>
       <div class="coll"><img src="https://images.pexels.com/photos/6050440/pexels-photo-6050440.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Browsing menswear in shop" loading="lazy" /><div class="coll__label">Smart Casual<small>For the in-between days — dressed up enough for the office, not stiff enough for the weekend.</small></div></div>
-      <div class="coll"><img src="https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Suit jacket with tape measure" loading="lazy" /><div class="coll__label">Made-to-Measure<small>Every measurement taken by hand in-store — nothing ordered off a size chart.</small></div></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm made-to-measure availability and participating branches -->
+      <div class="coll"><img src="https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Suit jacket with tape measure" loading="lazy" /><div class="coll__label">Made-to-Measure<small>Looking for a more personal fit? Ask about availability at your preferred branch.</small></div></div>
+      <!-- /PLACEHOLDER -->
+    </div>
+    <p class="collection-contact"><a href="tel:+441214780042" class="btn btn--outline">Ask Northfield about the range</a></p>
+    <div class="occasion-panel reveal">
+      <h3>Dress for the day ahead</h3>
+      <ul class="occasion-list"><li>Weddings</li><li>Proms</li><li>Funerals</li><li>Interviews</li></ul>
+      <p>A wedding colour scheme, a first prom suit, something understated for a funeral or a smart interview outfit: tell Little Italy what the day calls for. Have your date, usual size and budget to hand when you call Northfield.</p>
+      <a href="tel:+441214780042" class="btn btn--accent">Suit for an occasion?</a>
     </div>
   </div>
 </section>
@@ -160,13 +190,66 @@
 <section id="locations" style="background:var(--card);">
   <div class="wrap">
     <div class="section__head reveal">
-      <h2>Visit Us</h2>
-      <p>Three stores across the West Midlands.</p>
+      <h2>Find your Little Italy</h2>
+      <p>Three stores across the West Midlands. Pick your nearest and call to book a fitting.</p>
     </div>
     <div class="locations reveal">
-      <div class="loc"><h3>Northfield</h3><p>Birmingham<br>Mon–Sat: 9am – 5:30pm</p></div>
-      <div class="loc"><h3>Dudley</h3><p>West Midlands<br>Mon–Sat: 9am – 5:30pm</p></div>
-      <div class="loc"><h3>Wolverhampton</h3><p>West Midlands<br>Mon–Sat: 9am – 5:30pm</p></div>
+      <article class="loc">
+        <h3>Northfield</h3><p>Birmingham</p>
+        <dl class="loc__details">
+          <dt>Address</dt>
+          <!-- PLACEHOLDER: Northfield street address and postcode needed -->
+          <dd>Northfield, Birmingham</dd>
+          <!-- /PLACEHOLDER -->
+          <dt>Opening hours</dt>
+          <!-- PLACEHOLDER: real Northfield opening hours needed -->
+          <dd>Mon–Sat: 9am – 5:30pm</dd>
+          <!-- /PLACEHOLDER -->
+        </dl>
+        <!-- Northfield phone 0121 478 0042 is real; confirm it is the Northfield branch line -->
+        <div class="loc__actions">
+          <a href="tel:+441214780042" class="btn btn--accent">Call Northfield</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Northfield" class="btn btn--outline" target="_blank" rel="noopener" aria-label="Directions to Little Italy Menswear Northfield on Google Maps">Directions</a>
+        </div>
+      </article>
+      <article class="loc">
+        <h3>Dudley</h3><p>West Midlands</p>
+        <dl class="loc__details">
+          <dt>Address</dt>
+          <!-- PLACEHOLDER: Dudley street address and postcode needed -->
+          <dd>Dudley, West Midlands</dd>
+          <!-- /PLACEHOLDER -->
+          <dt>Opening hours</dt>
+          <!-- PLACEHOLDER: real Dudley opening hours needed -->
+          <dd>Mon–Sat: 9am – 5:30pm</dd>
+          <!-- /PLACEHOLDER -->
+        </dl>
+        <div class="loc__actions">
+          <!-- PLACEHOLDER: Dudley direct phone number needed; link uses the Northfield number meanwhile -->
+          <a href="tel:+441214780042" class="btn btn--accent">Call to book</a>
+          <!-- /PLACEHOLDER -->
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Dudley" class="btn btn--outline" target="_blank" rel="noopener" aria-label="Directions to Little Italy Menswear Dudley on Google Maps">Directions</a>
+        </div>
+      </article>
+      <article class="loc">
+        <h3>Wolverhampton</h3><p>West Midlands</p>
+        <dl class="loc__details">
+          <dt>Address</dt>
+          <!-- PLACEHOLDER: Wolverhampton street address and postcode needed -->
+          <dd>Wolverhampton, West Midlands</dd>
+          <!-- /PLACEHOLDER -->
+          <dt>Opening hours</dt>
+          <!-- PLACEHOLDER: real Wolverhampton opening hours needed -->
+          <dd>Mon–Sat: 9am – 5:30pm</dd>
+          <!-- /PLACEHOLDER -->
+        </dl>
+        <div class="loc__actions">
+          <!-- PLACEHOLDER: Wolverhampton direct phone number needed; link uses the Northfield number meanwhile -->
+          <a href="tel:+441214780042" class="btn btn--accent">Call to book</a>
+          <!-- /PLACEHOLDER -->
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Wolverhampton" class="btn btn--outline" target="_blank" rel="noopener" aria-label="Directions to Little Italy Menswear Wolverhampton on Google Maps">Directions</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -174,10 +257,12 @@
 <section>
   <div class="wrap">
     <div class="owner reveal">
-      <img src="https://images.pexels.com/photos/37332553/pexels-photo-37332553.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Tailor at work" loading="lazy" />
+      <img src="https://images.pexels.com/photos/37332553/pexels-photo-37332553.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Tailor working on a garment" loading="lazy" />
       <div>
+        <!-- PLACEHOLDER: replace with a real quote and name from the owner or head tailor -->
         <blockquote>"A good suit should feel like it was made for you — because it was. That's the standard across all three of our stores."</blockquote>
         <div class="who">— Head Tailor, Little Italy Menswear</div>
+        <!-- /PLACEHOLDER -->
       </div>
     </div>
   </div>
@@ -186,18 +271,26 @@
 <section id="reviews" class="reviews">
   <div class="wrap">
     <div class="section__head reveal">
-      <span class="rating-badge">⭐ 4.7 · Google Reviews</span>
-      <h2>What customers say</h2>
-      <p>Feedback from across all three stores.</p>
+      <span class="rating-badge">What locals say</span>
+      <h2>Kind words from the shop floor</h2>
+      <p>Fittings, formalwear and the odd last-minute wedding rescue.</p>
     </div>
   </div>
   <div class="review-grid reveal">
-    <div class="review"><div class="stars">★★★★★</div><p>"Got fitted for a wedding suit and the attention to detail was spot on."</p><div class="who">— Northfield Store</div></div>
-    <div class="review"><div class="stars">★★★★★</div><p>"Great range of formalwear, staff know exactly what suits your build."</p><div class="who">— Dudley Store</div></div>
-    <div class="review"><div class="stars">★★★★☆</div><p>"Good quality suits at a fair price, quick turnaround on alterations."</p><div class="who">— Wolverhampton Store</div></div>
+    <!-- PLACEHOLDER: replace with real Google review (Northfield) -->
+    <div class="review"><div class="stars">★★★★★</div><p>"Got fitted for a wedding suit and the attention to detail was spot on."</p><div class="who">— James, Local regular</div></div>
+    <!-- /PLACEHOLDER -->
+    <!-- PLACEHOLDER: replace with real Google review (Dudley) -->
+    <div class="review"><div class="stars">★★★★★</div><p>"Great range of formalwear, staff know exactly what suits your build."</p><div class="who">— Aaron, Local regular</div></div>
+    <!-- /PLACEHOLDER -->
+    <!-- PLACEHOLDER: replace with real Google review (Wolverhampton) -->
+    <div class="review"><div class="stars">★★★★☆</div><p>"Good quality suits at a fair price, quick turnaround on alterations."</p><div class="who">— Daniel, Local regular</div></div>
+    <!-- /PLACEHOLDER -->
   </div>
   <div class="wrap" style="text-align:center; margin-top:36px;">
+    <!-- PLACEHOLDER: swap for the direct Google Business Profile review link when known -->
     <a class="btn btn--outline" href="https://www.google.com/search?q=Little+Italy+Menswear+Northfield+reviews" target="_blank" rel="noopener">See all reviews on Google →</a>
+    <!-- /PLACEHOLDER -->
   </div>
 </section>
 
@@ -208,10 +301,18 @@
       <p>What customers usually ask before visiting.</p>
     </div>
     <div class="faq reveal">
-      <details><summary>How long does made-to-measure take?</summary><p>Typically 2-3 weeks depending on the garment and any alterations needed.</p></details>
+      <!-- PLACEHOLDER: confirm made-to-measure lead time -->
+      <details><summary>How long does made-to-measure take?</summary><p>Typically 2-3 weeks depending on the garment and any alterations needed — so if it's for a wedding or prom, call us as early as you can.</p></details>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm cross-store alterations policy -->
       <details><summary>Can I use any store for alterations?</summary><p>Yes, all three stores offer alteration services regardless of where you bought the item.</p></details>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm wedding party / group fittings -->
       <details><summary>Do you offer wedding party fittings?</summary><p>Yes, we regularly fit full wedding parties — book ahead for group appointments.</p></details>
-      <details><summary>Do I need an appointment?</summary><p>Walk-ins are welcome, but booking ahead is recommended for fittings and alterations.</p></details>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: confirm walk-in policy -->
+      <details><summary>Do I need an appointment?</summary><p>Walk-ins are welcome, but booking ahead is recommended for fittings and alterations. <a href="tel:+441214780042">Call 0121 478 0042</a> to book.</p></details>
+      <!-- /PLACEHOLDER -->
     </div>
   </div>
 </section>
@@ -219,23 +320,24 @@
 <section id="contact">
   <div class="wrap section__head reveal">
     <h2>Book a Fitting</h2>
-    <p>Call your nearest store or ring our main line to arrange a fitting appointment.</p>
+    <p>Tell us what you're dressing for, when you need it and the look you have in mind.</p>
   </div>
   <div class="wrap map-contact reveal">
     <iframe src="https://maps.google.com/maps?q=Northfield,+Birmingham&z=15&output=embed" loading="lazy" title="Map to Little Italy Menswear Northfield"></iframe>
-    <div style="display:flex; align-items:center; justify-content:center;">
-      <a href="tel:+441214780042" class="btn btn--accent">📞 0121 478 0042</a>
+    <div class="contact-details">
+      <p>Northfield · 0121 478 0042</p>
+      <a href="tel:+441214780042" class="btn btn--accent">Call to book a fitting</a>
+      <p>Visiting Dudley or Wolverhampton? See <a href="#locations">branch details and directions</a>.</p>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2026 Little Italy Menswear — Northfield · Dudley · Wolverhampton.</p>
-  <p style="margin-top:6px;">Site by <a href="#">your name here</a></p>
+  <p>&copy; 2026 Little Italy Menswear, Northfield · Dudley · Wolverhampton</p>
 </footer>
 
 <div class="sticky-cta">
-  <a href="tel:+441214780042" class="btn btn--accent">📞 Book a Fitting</a>
+  <a href="tel:+441214780042" class="btn btn--accent">Call Northfield</a>
   <a href="#locations" class="btn btn--outline">Find a Store</a>
 </div>
 
