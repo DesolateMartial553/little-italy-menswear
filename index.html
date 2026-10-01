@@ -44,6 +44,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="image" href="https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=800" media="(max-width:600px)" fetchpriority="high" />
+<link rel="preload" as="image" href="https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=1280" media="(min-width:601px) and (max-width:1280px)" fetchpriority="high" />
+<link rel="preload" as="image" href="https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=1920" media="(min-width:1281px)" fetchpriority="high" />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
   :root{
@@ -90,7 +93,9 @@
 
   /* hero: full-bleed editorial */
   .hero{position:relative; min-height:clamp(520px, calc(100svh - 112px), 760px); display:flex; align-items:center; color:var(--ink); overflow:hidden; padding:0;}
-  .hero::before{content:"";position:absolute; inset:0; background:url('https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=1920') 70% 25%/cover; filter:grayscale(.35) contrast(1.05);}
+  .hero::before{content:"";position:absolute; inset:0; background:url('https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=800') 70% 25%/cover; filter:grayscale(.35) contrast(1.05);}
+  @media (min-width:601px){.hero::before{background-image:url('https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=1280');}}
+  @media (min-width:1281px){.hero::before{background-image:url('https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=1920');}}
   .hero::after{content:"";position:absolute; inset:0; background:linear-gradient(90deg, rgba(12,11,10,.96) 0%, rgba(12,11,10,.86) 38%, rgba(12,11,10,.35) 78%, rgba(12,11,10,.55) 100%);}
   .hero__inner{position:relative; z-index:2; width:100%; padding:56px var(--pad);}
   .hero__tag{display:flex; align-items:center; gap:18px; color:var(--accent); font-weight:600; font-size:11px; margin-bottom:28px; text-transform:uppercase; letter-spacing:.3em;}
@@ -275,12 +280,12 @@
   </div>
     <div class="lookbook reveal" role="region" aria-label="Collections lookbook, scrollable" tabindex="0">
       <!-- PLACEHOLDER: confirm suits, formalwear and smart-casual ranges with the business -->
-      <div class="coll"><div class="coll__img"><img src="https://images.pexels.com/photos/6050409/pexels-photo-6050409.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Fitting a tailored suit" loading="lazy" /></div><div class="coll__label">Suits<small>Two and three-piece, cut for how you actually wear it — not just how it looks on the rack.</small></div></div>
-      <div class="coll"><div class="coll__img"><img src="https://images.pexels.com/photos/6050435/pexels-photo-6050435.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Shopping for shirts and suits" loading="lazy" /></div><div class="coll__label">Formalwear<small>Shirts, ties and accessories picked to actually go with what you already own.</small></div></div>
-      <div class="coll"><div class="coll__img"><img src="https://images.pexels.com/photos/6050440/pexels-photo-6050440.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Browsing menswear in shop" loading="lazy" /></div><div class="coll__label">Smart Casual<small>For the in-between days — dressed up enough for the office, not stiff enough for the weekend.</small></div></div>
+      <div class="coll"><div class="coll__img"><img src="https://images.pexels.com/photos/6050409/pexels-photo-6050409.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" srcset="https://images.pexels.com/photos/6050409/pexels-photo-6050409.jpeg?auto=compress&cs=tinysrgb&w=300&h=375 300w, https://images.pexels.com/photos/6050409/pexels-photo-6050409.jpeg?auto=compress&cs=tinysrgb&w=400&h=500 400w, https://images.pexels.com/photos/6050409/pexels-photo-6050409.jpeg?auto=compress&cs=tinysrgb&w=600&h=750 600w" sizes="(max-width:380px) 78vw, 300px" width="400" height="500" alt="Fitting a tailored suit" loading="lazy" decoding="async" /></div><div class="coll__label">Suits<small>Two and three-piece, cut for how you actually wear it — not just how it looks on the rack.</small></div></div>
+      <div class="coll"><div class="coll__img"><img src="https://images.pexels.com/photos/6050435/pexels-photo-6050435.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" srcset="https://images.pexels.com/photos/6050435/pexels-photo-6050435.jpeg?auto=compress&cs=tinysrgb&w=300&h=375 300w, https://images.pexels.com/photos/6050435/pexels-photo-6050435.jpeg?auto=compress&cs=tinysrgb&w=400&h=500 400w, https://images.pexels.com/photos/6050435/pexels-photo-6050435.jpeg?auto=compress&cs=tinysrgb&w=600&h=750 600w" sizes="(max-width:380px) 78vw, 300px" width="400" height="500" alt="Shopping for shirts and suits" loading="lazy" decoding="async" /></div><div class="coll__label">Formalwear<small>Shirts, ties and accessories picked to actually go with what you already own.</small></div></div>
+      <div class="coll"><div class="coll__img"><img src="https://images.pexels.com/photos/6050440/pexels-photo-6050440.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" srcset="https://images.pexels.com/photos/6050440/pexels-photo-6050440.jpeg?auto=compress&cs=tinysrgb&w=300&h=375 300w, https://images.pexels.com/photos/6050440/pexels-photo-6050440.jpeg?auto=compress&cs=tinysrgb&w=400&h=500 400w, https://images.pexels.com/photos/6050440/pexels-photo-6050440.jpeg?auto=compress&cs=tinysrgb&w=600&h=750 600w" sizes="(max-width:380px) 78vw, 300px" width="400" height="500" alt="Browsing menswear in shop" loading="lazy" decoding="async" /></div><div class="coll__label">Smart Casual<small>For the in-between days — dressed up enough for the office, not stiff enough for the weekend.</small></div></div>
       <!-- /PLACEHOLDER -->
       <!-- PLACEHOLDER: confirm made-to-measure availability and participating branches -->
-      <div class="coll"><div class="coll__img"><img src="https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Suit jacket with tape measure" loading="lazy" /></div><div class="coll__label">Made-to-Measure<small>Looking for a more personal fit? Ask about availability at your preferred branch.</small></div></div>
+      <div class="coll"><div class="coll__img"><img src="https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=400&h=500" srcset="https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=300&h=375 300w, https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=400&h=500 400w, https://images.pexels.com/photos/6765639/pexels-photo-6765639.jpeg?auto=compress&cs=tinysrgb&w=600&h=750 600w" sizes="(max-width:380px) 78vw, 300px" width="400" height="500" alt="Suit jacket with tape measure" loading="lazy" decoding="async" /></div><div class="coll__label">Made-to-Measure<small>Looking for a more personal fit? Ask about availability at your preferred branch.</small></div></div>
       <!-- /PLACEHOLDER -->
     </div>
   <div class="wrap">
@@ -364,7 +369,7 @@
 <section class="owner-section">
   <div class="wrap">
     <div class="owner reveal">
-      <img src="https://images.pexels.com/photos/37332553/pexels-photo-37332553.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Tailor working on a garment" loading="lazy" />
+      <img src="https://images.pexels.com/photos/37332553/pexels-photo-37332553.jpeg?auto=compress&cs=tinysrgb&w=500&h=625" srcset="https://images.pexels.com/photos/37332553/pexels-photo-37332553.jpeg?auto=compress&cs=tinysrgb&w=360&h=450 360w, https://images.pexels.com/photos/37332553/pexels-photo-37332553.jpeg?auto=compress&cs=tinysrgb&w=500&h=625 500w, https://images.pexels.com/photos/37332553/pexels-photo-37332553.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000 800w" sizes="(max-width:900px) 360px, 460px" width="500" height="625" alt="Tailor working on a garment" loading="lazy" decoding="async" />
       <div>
         <!-- PLACEHOLDER: replace with a real quote and name from the owner or head tailor -->
         <blockquote>"A good suit should feel like it was made for you — because it was. That's the standard across all three of our stores."</blockquote>
@@ -430,7 +435,14 @@
     <p>Tell us what you're dressing for, when you need it and the look you have in mind.</p>
   </div>
   <div class="wrap map-contact reveal">
-    <iframe src="https://maps.google.com/maps?q=Northfield,+Birmingham&z=15&output=embed" loading="lazy" title="Map to Little Italy Menswear Northfield"></iframe>
+    <div class="map-facade" id="mapFacade" data-src="https://maps.google.com/maps?q=Northfield,+Birmingham&z=15&output=embed" data-title="Map to Little Italy Menswear Northfield">
+      <div class="map-facade__panel">
+        <p class="map-facade__name">Little Italy Menswear</p>
+        <p class="map-facade__addr">Northfield, Birmingham</p>
+        <button type="button" class="btn btn--outline map-facade__btn" id="mapShow">Show map</button>
+        <a class="map-facade__dir" href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Northfield+Birmingham" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
     <div class="contact-details">
       <p>Northfield · 0121 478 0042</p>
       <a href="tel:+441214780042" class="btn btn--accent">Call to book a fitting</a>
@@ -480,5 +492,32 @@
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 
+<style>
+  .owner img{height:auto;}
+  .map-facade{position:relative; width:100%; min-height:320px; border:1px solid var(--accent-soft); padding:6px; background:var(--bg);}
+  .map-facade__panel{height:100%; min-height:306px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:6px; padding:24px; background:var(--card); border:1px solid var(--line);}
+  .map-facade__name{font-family:var(--serif); color:var(--ink); font-size:30px; line-height:1.1;}
+  .map-facade__addr{color:var(--muted); font-size:11px; letter-spacing:.2em; text-transform:uppercase; margin-bottom:18px;}
+  .map-facade__dir{color:var(--accent); font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; margin-top:14px; border-bottom:1px solid var(--accent-soft); padding-bottom:2px; text-decoration:none;}
+  .map-facade__dir:hover,.map-facade__dir:focus-visible{border-bottom-color:var(--accent);}
+  .map-facade__btn:focus-visible,.map-facade__dir:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+  .map-facade iframe{display:block; width:100%; height:100%; min-height:306px; border:0; filter:grayscale(1) invert(90%);}
+  @media (max-width:900px){.map-facade{min-height:260px;} .map-facade__panel,.map-facade iframe{min-height:246px;}}
+</style>
+<script>
+(function(){
+  var f=document.getElementById('mapFacade'), b=document.getElementById('mapShow');
+  if(!f||!b) return;
+  b.addEventListener('click', function(){
+    var i=document.createElement('iframe');
+    i.src=f.getAttribute('data-src');
+    i.title=f.getAttribute('data-title');
+    i.loading='lazy';
+    i.referrerPolicy='no-referrer-when-downgrade';
+    f.textContent='';
+    f.appendChild(i);
+  });
+})();
+</script>
 </body>
 </html>
