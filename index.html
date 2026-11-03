@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-gAIMlo4uHwea7LDSu/hGhLXHg8Iu/WQoVQvXGVLwabA=' 'sha256-seqC/ossHjBNrIRzy/kfs15F2JOEZqgq6ozS1JozCy8=' 'sha256-ZDHT8kAhy4BigzCXNj0za54F2qDCJTDwWiqs7wYDsiI=' 'sha256-327n3Jh+0X4WkiFg9518P2QaGYyBUqWsPUe+r21ny+Y='; style-src 'self' 'sha256-XjMHDeLaWGbTgDxSfnVxUI9xmitNG6fADLFIk7vAEFg=' 'sha256-ASJRQr6gqs2tJa922EzKUuhP7eOKfxbWiRzT7Wz1OFc='; img-src 'self' data:; font-src 'self'; frame-src https://maps.google.com https://www.google.com; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-gAIMlo4uHwea7LDSu/hGhLXHg8Iu/WQoVQvXGVLwabA=' 'sha256-seqC/ossHjBNrIRzy/kfs15F2JOEZqgq6ozS1JozCy8=' 'sha256-w/1Ad6j3QLOGt1YuFduS/H3v8sneEv6IHPcPJe7BnZM=' 'sha256-327n3Jh+0X4WkiFg9518P2QaGYyBUqWsPUe+r21ny+Y='; style-src 'self' 'sha256-Y22aY6JIhfAtDRpxOZ/S2cFZSXE40TJloqjYOiIn7/U='; img-src 'self' data:; font-src 'self'; frame-src https://maps.google.com https://www.google.com; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 <script>if (window.top !== window.self) { try { window.top.location.replace(window.self.location.href); } catch (e) { document.documentElement.hidden = true; } }</script>
 <title>Little Italy Menswear | Menswear in Northfield, Birmingham</title>
 <meta name="description" content="Suits, formalwear and smart casual menswear from Little Italy Menswear in Northfield, Birmingham, with branches in Dudley and Wolverhampton too." />
 <link rel="canonical" href="https://desolatemartial553.github.io/little-italy-menswear/" />
-<meta name="theme-color" content="#0c0b0a" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0b0a'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23c8a24d'%3ELI%3C/text%3E%3C/svg%3E" />
+<meta name="theme-color" content="#F5F1EA" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23121212'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23B08A4A'%3ELI%3C/text%3E%3C/svg%3E" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Little Italy Menswear" />
 <meta property="og:title" content="Little Italy Menswear | Menswear in Northfield, Birmingham" />
@@ -45,218 +45,302 @@
   ]
 }
 </script>
-<link rel="preload" as="image" href="images/6765639-w800-cc16e6.webp" media="(max-width:600px)" fetchpriority="high" />
-<link rel="preload" as="image" href="images/6765639-w1280-031407.webp" media="(min-width:601px) and (max-width:1280px)" fetchpriority="high" />
-<link rel="preload" as="image" href="images/6765639-w1920-b0755e.webp" media="(min-width:1281px)" fetchpriority="high" />
+<link rel="preload" as="image" href="images/6765639-w800-cc16e6.webp" imagesrcset="images/6765639-w800-cc16e6.webp 800w, images/6765639-w1280-031407.webp 1280w" imagesizes="(max-width:820px) 100vw, 420px" fetchpriority="high" />
 <link rel="stylesheet" href="fonts/fonts.css" />
 <style>
   :root{
-    --bg:#0c0b0a; --ink:#f3eee3; --muted:#a79f90; --accent:#c8a24d; --accent-soft:rgba(200,162,77,.38);
-    --card:#141312; --line:#2a2825; --pad:max(24px, calc((100% - 1092px) / 2)); --hdr:72px;
-    --serif:'Cormorant Garamond',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+    --ivory:#F5F1EA; --ink:#121212; --gold:#B08A4A; --ox:#5A1F24;
+    --mut:#5d584f; --mut-d:#b8b1a3; --hair:rgba(176,138,74,.6); --line:rgba(18,18,18,.18); --line-d:rgba(245,241,234,.18);
+    --pad:max(24px, calc((100% - 1200px) / 2)); --hdr:56px;
+    --serif:'Bodoni Moda','Didot','Bodoni 72',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+    --ease:cubic-bezier(.2,.8,.2,1);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:auto;}
   [id]{scroll-margin-top:var(--hdr);}
   #top{scroll-margin-top:0;}
-  .skip-link{position:absolute; left:16px; top:-100px; z-index:100; background:var(--accent); color:#0c0b0a; padding:12px 20px; font-weight:700; font-size:13px; text-decoration:none; letter-spacing:.08em; text-transform:uppercase;}
+  .skip-link{position:absolute; left:16px; top:-100px; z-index:100; background:var(--gold); color:var(--ink); padding:12px 20px; font-weight:700; font-size:12px; text-decoration:none; letter-spacing:.14em; text-transform:uppercase;}
   .skip-link:focus{top:12px; outline:2px solid var(--ink); outline-offset:2px;}
   main:focus,[tabindex="-1"]:focus{outline:none;}
-  body{font-family:var(--sans); background:var(--bg); color:var(--ink); line-height:1.65; font-size:16px; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
-  h1,h2,h3{font-family:var(--serif); font-weight:600; letter-spacing:-.005em;}
-  .wrap{max-width:1140px; margin:0 auto; padding:0 24px;}
+  body{font-family:var(--sans); background:var(--ivory); color:var(--ink); line-height:1.65; font-size:16px; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+  h1,h2,h3{font-family:var(--serif); font-weight:500; letter-spacing:-.01em;}
+  .wrap{max-width:1248px; margin:0 auto; padding:0 24px;}
   a{color:inherit;}
-  a:focus-visible,button:focus-visible,summary:focus-visible,.lookbook:focus-visible{outline:3px solid var(--accent); outline-offset:3px; border-radius:0;}
-  .btn--accent:focus-visible{outline-color:var(--ink);}
+  a:focus-visible,button:focus-visible,summary:focus-visible,.lookbook:focus-visible{outline:3px solid var(--ox); outline-offset:3px;}
+  .on-ink a:focus-visible,.on-ink button:focus-visible,.on-ink .lookbook:focus-visible,footer a:focus-visible,.sticky-cta a:focus-visible{outline-color:var(--gold);}
+  .btn:focus-visible{outline-color:var(--ink); outline-offset:3px;}
+  .on-ink .btn:focus-visible,.sticky-cta .btn:focus-visible{outline-color:var(--ivory);}
   img{display:block; max-width:100%;}
-  .js .reveal{opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s ease;}
+  .sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;}
+  .js .reveal{opacity:0; transform:translateY(22px); transition:opacity .9s var(--ease), transform .9s var(--ease);}
   .js .reveal.in{opacity:1; transform:none;}
-  @media(prefers-reduced-motion:reduce){
-    .js .reveal{opacity:1; transform:none; transition:none;}
-    *,*::before,*::after{scroll-behavior:auto !important; transition:none !important; animation:none !important;}
-    .coll:hover img,.loc:hover{transform:none;}
-  }
 
-  /* top bar + header */
-  .topbar{background:#000; color:var(--muted); font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:600; border-bottom:1px solid var(--line);}
-  .topbar__inner{display:flex; justify-content:space-between; align-items:center; padding:9px 24px; flex-wrap:wrap; gap:4px 20px;}
-  .topbar a{color:var(--accent); text-decoration:none; font-weight:700;}
-  header{position:sticky; top:0; background:rgba(12,11,10,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--accent-soft); z-index:30; transition:box-shadow .3s;}
-  header.scrolled{box-shadow:0 10px 30px rgba(0,0,0,.55);}
-  .header__inner{display:flex; align-items:center; justify-content:space-between; padding:8px 24px; min-height:60px; position:relative;}
-  .brand{font-family:var(--serif); font-size:26px; font-weight:600; text-decoration:none; letter-spacing:.04em; text-transform:uppercase; line-height:1; white-space:nowrap; display:inline-flex; align-items:center; min-height:44px;}
-  .brand span{color:var(--accent); font-style:italic; text-transform:none; letter-spacing:.01em; font-weight:500;}
-  nav ul{list-style:none; display:flex; gap:36px;}
-  nav a{text-decoration:none; font-weight:600; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.22em; padding:0; min-height:44px; display:inline-flex; align-items:center; border-bottom:1px solid transparent; transition:color .2s, border-color .2s;}
-  nav a:hover{color:var(--accent); border-color:var(--accent);}
-  .burger{display:none; flex-direction:column; justify-content:center; align-items:center; gap:5px; background:none; border:0; cursor:pointer; width:44px; height:44px; padding:0; margin-right:-10px;}
-  .burger span{width:24px; height:1px; background:var(--ink);}
-  .mobile-menu{display:none; position:absolute; top:100%; left:0; right:0; background:var(--card); border-bottom:1px solid var(--accent-soft); flex-direction:column; padding:8px 24px 16px;}
-  .mobile-menu a{padding:15px 0; min-height:44px; text-decoration:none; font-weight:600; border-bottom:1px solid var(--line); text-transform:uppercase; letter-spacing:.2em; font-size:12px;}
+  /* small-caps labels */
+  .label{font-size:11px; letter-spacing:.28em; text-transform:uppercase; font-weight:700; color:var(--ox);}
+  .on-ink .label{color:var(--gold);}
 
-  /* buttons */
-  .btn{display:inline-block; min-height:44px; padding:15px 30px; border-radius:0; font-weight:700; text-decoration:none; font-size:11px; text-transform:uppercase; letter-spacing:.2em; border:1px solid transparent; cursor:pointer; transition:background .25s, color .25s, border-color .25s; line-height:1.3; text-align:center;}
-  .btn--accent{background:var(--accent); color:#0c0b0a; border-color:var(--accent);}
-  .btn--accent:hover{background:var(--ink); border-color:var(--ink);}
-  .btn--outline{border-color:var(--accent); color:var(--accent);}
-  .btn--outline:hover{background:var(--accent); color:#0c0b0a;}
+  /* header */
+  header{position:sticky; top:0; background:rgba(245,241,234,.95); backdrop-filter:blur(8px); border-bottom:1px solid var(--hair); z-index:30;}
+  .header__inner{display:flex; align-items:center; justify-content:space-between; min-height:var(--hdr); position:relative;}
+  .brand{font-family:var(--serif); font-size:19px; font-weight:700; text-decoration:none; letter-spacing:.14em; text-transform:uppercase; line-height:1; white-space:nowrap; display:inline-flex; align-items:center; min-height:44px;}
+  .brand span{font-family:var(--sans); font-size:9px; letter-spacing:.34em; font-weight:700; color:var(--ox); margin-left:12px; padding-left:12px; border-left:1px solid var(--hair);}
+  nav ul{list-style:none; display:flex; gap:38px;}
+  nav a{text-decoration:none; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:.24em; min-height:44px; display:inline-flex; align-items:center; background:linear-gradient(var(--gold),var(--gold)) 0 70%/0 1px no-repeat; transition:background-size .35s var(--ease);}
+  nav a:hover,nav a:focus-visible{background-size:100% 1px;}
+  .burger{display:none; flex-direction:column; justify-content:center; align-items:center; gap:6px; background:none; border:0; cursor:pointer; width:44px; height:44px; padding:0; margin-right:-10px;}
+  .burger span{width:24px; height:1.5px; background:var(--ink);}
+  .mobile-menu{display:none; position:absolute; top:100%; left:0; right:0; background:var(--ivory); border-bottom:1px solid var(--hair); flex-direction:column; padding:6px 24px 14px;}
+  .mobile-menu a{padding:14px 0; min-height:44px; text-decoration:none; font-family:var(--serif); font-size:24px; border-bottom:1px solid var(--line);}
 
-  /* hero: full-bleed editorial */
-  .hero{position:relative; min-height:clamp(520px, calc(100svh - 112px), 760px); display:flex; align-items:center; color:var(--ink); overflow:hidden; padding:0;}
-  .hero::before{content:"";position:absolute; inset:0; background:url('images/6765639-w800-cc16e6.webp') 70% 25%/cover; filter:grayscale(.35) contrast(1.05);}
-  @media (min-width:601px){.hero::before{background-image:url('images/6765639-w1280-031407.webp');}}
-  @media (min-width:1281px){.hero::before{background-image:url('images/6765639-w1920-b0755e.webp');}}
-  .hero::after{content:"";position:absolute; inset:0; background:linear-gradient(90deg, rgba(12,11,10,.96) 0%, rgba(12,11,10,.86) 38%, rgba(12,11,10,.35) 78%, rgba(12,11,10,.55) 100%);}
-  .hero__inner{position:relative; z-index:2; width:100%; padding:56px var(--pad);}
-  .hero__tag{display:flex; align-items:center; gap:18px; color:var(--accent); font-weight:600; font-size:11px; margin-bottom:28px; text-transform:uppercase; letter-spacing:.3em;}
-  .hero__tag::before{content:""; width:56px; height:1px; background:var(--accent); flex:none;}
-  .hero h1{font-size:clamp(44px,6.6vw,88px); line-height:1.02; font-weight:500; margin-bottom:26px; max-width:11em;}
-  .hero h1 em{color:var(--accent); font-style:italic; font-weight:500;}
-  .hero p{max-width:460px; margin-bottom:38px; color:#c9c1b2; font-size:17px;}
-  .hero__actions{display:flex; gap:14px; flex-wrap:wrap;}
+  /* buttons: gold is the only CTA colour */
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:48px; padding:15px 30px; border-radius:0; font-weight:700; text-decoration:none; font-size:11px; text-transform:uppercase; letter-spacing:.22em; border:1px solid var(--gold); background:var(--gold); color:var(--ink); cursor:pointer; line-height:1.3; text-align:center; transition:background .25s, color .25s, border-color .25s;}
+  .btn svg{width:16px; height:16px; flex:none; transition:transform .3s var(--ease);}
+  .btn:hover{background:var(--ink); border-color:var(--ink); color:var(--ivory);}
+  .on-ink .btn:hover{background:var(--ivory); border-color:var(--ivory); color:var(--ink);}
+  .btn:hover svg{transform:translateX(4px);}
+  .btn--line{background:transparent; color:var(--ink); border-color:var(--ink);}
+  .on-ink .btn--line{color:var(--ivory); border-color:var(--hair);}
+  .btn--line:hover{background:var(--ink); color:var(--ivory); border-color:var(--ink);}
+  .tlink{font-size:11px; letter-spacing:.22em; text-transform:uppercase; font-weight:700; text-decoration:none; padding:12px 0; display:inline-flex; align-items:center; min-height:44px; background:linear-gradient(var(--gold),var(--gold)) 0 78%/100% 1px no-repeat; transition:background-size .35s var(--ease);}
+  .tlink:hover{background-size:0 1px; background-position:100% 78%;}
 
-  /* sections + editorial heads */
-  section{padding:104px 0;}
-  .section__head{max-width:1092px; margin:0 auto 56px; display:grid; grid-template-columns:1.1fr 1fr; gap:12px 64px; align-items:end;}
-  .section__head::before{content:""; grid-column:1/-1; width:56px; height:1px; background:var(--accent); margin-bottom:14px;}
-  .section__head h2{font-size:clamp(34px,4.6vw,56px); line-height:1.05; font-weight:500;}
-  .section__head p{color:var(--muted); max-width:440px; font-size:15px;}
-  .section__head .rating-badge{grid-column:1/-1;}
+  /* ---------- COVER ---------- */
+  .cover{padding:0 0 40px; --mf:min(11.85vw,170px);}
+  .cover__strip{display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:36px; border-bottom:1px solid var(--ink); font-size:10px; letter-spacing:.26em; text-transform:uppercase; font-weight:700; white-space:nowrap;}
+  .cover__strip a{text-decoration:none; color:var(--ox); display:inline-flex; align-items:center; min-height:44px;}
+  .cover__strip a:hover{text-decoration:underline; text-underline-offset:4px;}
+  .issue{font-family:var(--serif); font-size:15px; letter-spacing:.12em; color:var(--ox);}
+  .mast{font-family:var(--serif); font-weight:700; text-transform:uppercase; font-size:var(--mf); line-height:.9; letter-spacing:-.025em; text-align:center; white-space:nowrap; padding:.04em 0 .02em; border-bottom:1px solid var(--hair);}
+  .mast__w{display:inline-block; overflow:hidden; vertical-align:top; padding:.02em .015em .03em;}
+  .mast__w + .mast__w{margin-left:.2em;}
+  .mast__w span{display:inline-block; animation:rise 1s var(--ease) both;}
+  .mast__w:first-child span:nth-child(1){animation-delay:.05s;} .mast__w:first-child span:nth-child(2){animation-delay:.11s;} .mast__w:first-child span:nth-child(3){animation-delay:.17s;} .mast__w:first-child span:nth-child(4){animation-delay:.23s;} .mast__w:first-child span:nth-child(5){animation-delay:.29s;} .mast__w:first-child span:nth-child(6){animation-delay:.35s;}
+  .mast__w + .mast__w span:nth-child(1){animation-delay:.41s;} .mast__w + .mast__w span:nth-child(2){animation-delay:.47s;} .mast__w + .mast__w span:nth-child(3){animation-delay:.53s;} .mast__w + .mast__w span:nth-child(4){animation-delay:.59s;} .mast__w + .mast__w span:nth-child(5){animation-delay:.65s;}
+  @keyframes rise{from{transform:translateY(108%);}to{transform:none;}}
+  @keyframes fadeUp{from{opacity:0; transform:translateY(14px);}to{opacity:1; transform:none;}}
+  .cover__body{display:flex; justify-content:space-between; gap:clamp(24px,4vw,64px); padding-top:26px; height:clamp(420px, calc(100svh - var(--hdr) - 36px - var(--mf) * .93 - 84px), 660px); animation:fadeUp 1s .55s var(--ease) both;}
+  .cover__col{flex:1 1 0; min-width:0; display:flex; flex-direction:column; justify-content:space-between; gap:24px;}
+  .cover__col--r{text-align:right; align-items:flex-end;}
+  .cover__photo{flex:none; height:100%; aspect-ratio:2/3; position:relative; background:var(--ink); outline:1px solid var(--hair); outline-offset:10px; overflow:hidden;}
+  .cover__photo img{width:100%; height:100%; object-fit:cover; object-position:50% 58%; transition:transform 1.6s var(--ease);}
+  .cl{display:block; width:100%; text-decoration:none; padding-top:16px; border-top:1px solid var(--ink);}
+  .cl__no{display:block; font-size:10px; letter-spacing:.28em; text-transform:uppercase; font-weight:700; color:var(--ox); margin-bottom:10px;}
+  .cl__t{display:block; font-family:var(--serif); font-size:clamp(24px,2.7vw,38px); line-height:1.08; font-weight:500; letter-spacing:-.01em; background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 2px no-repeat; transition:background-size .5s var(--ease); width:max-content; max-width:100%;}
+  .cover__col--r .cl__t{margin-left:auto;}
+  .cl:hover .cl__t,.cl:focus-visible .cl__t{background-size:100% 2px;}
+  .cl__s{display:block; margin-top:10px; font-size:13px; color:var(--mut); line-height:1.55; max-width:30ch;}
+  .cover__col--r .cl__s{margin-left:auto;}
+  .cover__dek{font-size:15px; color:var(--mut); max-width:30ch; line-height:1.6;}
+  .cover__cta{display:flex; flex-direction:column; align-items:flex-end; gap:6px;}
+
+  /* sections */
+  section{padding:112px 0;}
+  .head{display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:14px 64px; align-items:end; margin-bottom:60px; padding-top:18px; border-top:1px solid var(--ink);}
+  .on-ink .head{border-top-color:var(--hair);}
+  .head .label{grid-column:1/-1;}
+  .head h2{font-size:clamp(38px,5.6vw,80px); line-height:1; letter-spacing:-.02em;}
+  .head p{color:var(--mut); max-width:42ch; font-size:15px;}
+  .on-ink .head p{color:var(--mut-d);}
+  .on-ink{background:var(--ink); color:var(--ivory);}
 
   /* lookbook */
-  #collections{border-top:1px solid var(--line);}
-  .lookbook{display:flex; gap:28px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 var(--pad) 28px; scroll-padding-inline:var(--pad); overscroll-behavior-x:contain; scrollbar-width:thin; scrollbar-color:var(--accent) var(--line); counter-reset:look;}
-  .lookbook::-webkit-scrollbar{height:3px;}
-  .lookbook::-webkit-scrollbar-track{background:var(--line);}
-  .lookbook::-webkit-scrollbar-thumb{background:var(--accent);}
+  .lookbook{display:flex; gap:32px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 var(--pad) 8px; scroll-padding-inline:var(--pad); overscroll-behavior-x:contain; scrollbar-width:none; counter-reset:look;}
+  .lookbook::-webkit-scrollbar{display:none;}
   .lookbook::after{content:""; flex:0 0 1px;}
-  .lookbook-hint{margin:0 0 18px; display:flex; align-items:center; gap:14px; font-size:10px; letter-spacing:.3em; text-transform:uppercase; color:var(--muted); font-weight:600;}
-  .lookbook-hint::after{content:""; width:48px; height:1px; background:var(--accent-soft);}
-  .coll{flex:0 0 auto; width:min(78vw,300px); scroll-snap-align:start; counter-increment:look;}
-  .coll__img{overflow:hidden; aspect-ratio:4/5; background:var(--card);}
-  .coll img{width:100%; height:100%; object-fit:cover; filter:grayscale(.25); transition:transform .8s ease, filter .5s;}
-  .coll:hover img{transform:scale(1.04); filter:none;}
-  .coll__label{padding-top:18px; font-family:var(--serif); font-size:28px; font-weight:500; line-height:1.1; border-top:1px solid var(--accent-soft); margin-top:18px;}
-  .coll__label::before{content:"No. 0" counter(look); display:block; font-family:var(--sans); font-size:10px; letter-spacing:.3em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:10px;}
-  .coll__label small{display:block; font-family:var(--sans); font-size:13.5px; color:var(--muted); font-weight:400; margin-top:10px; line-height:1.6;}
-  .collection-contact{text-align:left; margin:44px 0 0;}
-  .occasion-panel{margin:72px 0 0; padding:48px 0 0; border-top:1px solid var(--line); display:grid; grid-template-columns:1fr 1.2fr; gap:8px 64px; align-items:start;}
-  .occasion-panel h3{font-size:clamp(32px,4vw,48px); line-height:1.05; font-weight:500; grid-column:1;}
-  .occasion-list{grid-column:1; display:flex; flex-wrap:wrap; gap:8px 22px; list-style:none; color:var(--accent); font-size:11px; letter-spacing:.24em; text-transform:uppercase; font-weight:700; margin-top:18px;}
-  .occasion-panel p{grid-column:2; grid-row:1/3; color:var(--muted); max-width:560px;}
-  .occasion-panel .btn{grid-column:2; justify-self:start; margin-top:12px;}
+  .lookbook.drag{scroll-snap-type:none; cursor:grabbing; user-select:none;}
+  .lookbook img{-webkit-user-drag:none; user-select:none;}
+  .coll{flex:0 0 auto; width:min(76vw,370px); scroll-snap-align:start; counter-increment:look;}
+  .coll__n{display:flex; align-items:flex-end; gap:16px; margin-bottom:14px;}
+  .coll__n::before{content:"0" counter(look); font-family:var(--serif); font-size:clamp(84px,9vw,128px); font-weight:500; line-height:.74; color:var(--gold); letter-spacing:-.04em;}
+  .coll__n::after{content:""; flex:1; height:1px; background:var(--hair); margin-bottom:6px;}
+  .coll__img{overflow:hidden; aspect-ratio:4/5; background:#1e1d1b;}
+  .coll img{width:100%; height:100%; object-fit:cover; filter:grayscale(.2); transition:transform 1.8s var(--ease), filter .8s;}
+  .coll__label{padding-top:18px; font-family:var(--serif); font-size:34px; font-weight:500; line-height:1.05; letter-spacing:-.01em;}
+  .coll__label small{display:block; font-family:var(--sans); font-size:14px; color:var(--mut-d); font-weight:400; margin-top:12px; line-height:1.6; letter-spacing:0;}
+  .lookbar{display:flex; align-items:center; gap:22px; padding-top:34px;}
+  .lookbar__track{flex:1; height:1px; background:var(--line-d); position:relative; max-width:360px;}
+  .lookbar__fill{position:absolute; left:0; top:-1px; height:3px; width:100%; background:var(--gold); transform-origin:0 50%; transform:scaleX(.25);}
+  .lookbar .label{display:inline-flex; align-items:center; gap:10px; margin-right:auto;}
+  .lookbar .label svg{width:18px; height:18px;}
 
-  /* store directory plaques */
-  #locations{background:var(--card); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
-  .locations{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; max-width:1092px; margin:0 auto; counter-reset:plaque;}
-  .loc{position:relative; display:flex; flex-direction:column; text-align:left; padding:40px 32px 32px; min-width:0; background:var(--bg); border:1px solid var(--accent-soft); counter-increment:plaque; transition:border-color .3s, transform .3s;}
-  .loc::before{content:""; position:absolute; inset:7px; border:1px solid var(--line); pointer-events:none; transition:border-color .3s;}
-  .loc:hover{border-color:var(--accent); transform:translateY(-4px);}
-  .loc:hover::before{border-color:var(--accent-soft);}
-  .loc h3{position:relative; color:var(--ink); font-size:34px; line-height:1.05; font-weight:500; margin-bottom:6px; text-transform:none;}
-  .loc h3::before{content:"0" counter(plaque); display:block; font-family:var(--sans); font-size:10px; letter-spacing:.3em; color:var(--accent); font-weight:700; margin-bottom:18px;}
-  .loc > p{color:var(--accent); font-size:10px; letter-spacing:.3em; text-transform:uppercase; font-weight:600; padding-bottom:20px; border-bottom:1px solid var(--line);}
-  .loc__details{margin:6px 0 28px; font-size:14px; position:relative;}
-  .loc__details dt{font-size:10px; letter-spacing:.28em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-top:20px;}
-  .loc__details dd{color:var(--ink); margin:6px 0 0; opacity:.88;}
-  .loc__actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:auto; position:relative;}
-  .loc__actions .btn{padding:15px 18px; font-size:10px; flex:1 1 auto;}
+  /* the fitting */
+  .fitting{padding-bottom:96px;}
+  .fit{display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:clamp(40px,6vw,96px); align-items:start;}
+  .fit__fig{position:relative; margin:0; padding-bottom:0;}
+  .fit__fig .frame{overflow:hidden; background:var(--ink); outline:1px solid var(--hair); outline-offset:12px;}
+  .fit__fig img{width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; filter:grayscale(.25); transition:transform 1.8s var(--ease);}
+  .fit__fig figcaption{margin-top:28px; font-size:10px; letter-spacing:.28em; text-transform:uppercase; font-weight:700; color:var(--ox);}
+  .fit__text h3{font-size:clamp(34px,4.2vw,58px); line-height:1.04; letter-spacing:-.02em; margin:14px 0 30px;}
+  .fit__text h3 em{font-style:italic;}
+  .fit__cols{column-count:2; column-gap:40px; column-rule:1px solid var(--line); font-size:15.5px; color:#2b2926;}
+  .fit__cols p{margin-bottom:16px; break-inside:avoid-column;}
+  .fit__cols p:first-child::first-letter{font-family:var(--serif); font-weight:700; float:left; font-size:4.4em; line-height:.78; padding:.05em .1em 0 0; color:var(--ox);}
+  .occasions{list-style:none; display:flex; flex-wrap:wrap; gap:6px 0; margin:26px 0 30px; font-size:11px; letter-spacing:.26em; text-transform:uppercase; font-weight:700; color:var(--ox);}
+  .occasions li + li::before{content:"/"; margin:0 16px; color:var(--gold);}
+  .pull{margin:56px 0 0; padding-top:30px; border-top:1px solid var(--ink);}
+  .pull blockquote{font-family:var(--serif); font-style:italic; font-weight:500; font-size:clamp(26px,2.9vw,40px); line-height:1.18; letter-spacing:-.01em; text-indent:-.45em;}
+  .pull .who{margin-top:18px; font-size:11px; letter-spacing:.26em; text-transform:uppercase; font-weight:700; color:var(--ox);}
 
-  /* craft quote */
-  .owner-section{padding-block:112px;}
-  .owner{display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:72px; align-items:center; max-width:1092px; margin:0 auto;}
-  .owner img{aspect-ratio:4/5; object-fit:cover; width:100%; filter:grayscale(.3); outline:1px solid var(--accent-soft); outline-offset:12px;}
-  .owner blockquote{font-family:var(--serif); font-size:clamp(26px,3.2vw,40px); line-height:1.22; font-weight:500; font-style:italic; margin-bottom:24px;}
-  .owner blockquote::before{content:""; display:block; width:56px; height:1px; background:var(--accent); margin-bottom:28px;}
-  .owner .who{color:var(--accent); font-weight:700; font-size:11px; letter-spacing:.26em; text-transform:uppercase;}
+  /* locations: contents page */
+  #locations{background:#EDE7DB; border-top:1px solid var(--hair); border-bottom:1px solid var(--hair);}
+  .locations{counter-reset:loc; border-bottom:1px solid var(--ink);}
+  .loc{counter-increment:loc; display:grid; grid-template-columns:clamp(56px,8vw,112px) minmax(0,1.25fr) minmax(0,1fr) minmax(190px,auto); grid-template-rows:auto auto; column-gap:clamp(20px,3vw,48px); padding:38px 0; border-top:1px solid var(--ink); align-items:start; transition:background .4s;}
+  .loc::before{content:"0" counter(loc); grid-column:1; grid-row:1/3; font-family:var(--serif); font-size:clamp(40px,5vw,72px); line-height:.9; color:var(--gold); letter-spacing:-.03em;}
+  .loc h3{grid-column:2; grid-row:1; display:flex; align-items:baseline; gap:18px; font-size:clamp(34px,4vw,58px); line-height:1; letter-spacing:-.02em;}
+  .loc h3::after{content:""; flex:1; border-bottom:2px dotted var(--gold); transform:translateY(-.18em); min-width:20px;}
+  .loc > p{grid-column:2; grid-row:2; margin-top:10px; font-size:11px; letter-spacing:.28em; text-transform:uppercase; font-weight:700; color:var(--ox);}
+  .loc__details{grid-column:3; grid-row:1/3; font-size:14px;}
+  .loc__details dt{font-size:10px; letter-spacing:.28em; text-transform:uppercase; color:var(--ox); font-weight:700;}
+  .loc__details dd{margin:4px 0 16px; color:#2b2926;}
+  .loc__details dd:last-child{margin-bottom:0;}
+  .loc__actions{grid-column:4; grid-row:1/3; display:flex; flex-direction:column; align-items:stretch; gap:8px;}
 
-  /* reviews */
-  .reviews{background:var(--card); border-top:1px solid var(--line);}
-  .rating-badge{display:inline-block; justify-self:start; color:var(--accent); font-weight:700; font-size:11px; letter-spacing:.3em; text-transform:uppercase; margin-bottom:6px;}
-  .review-grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); max-width:1140px; margin:0 auto; padding:0 24px;}
-  .review{padding:8px 36px 8px 0; margin-right:36px; border-right:1px solid var(--line); text-align:left;}
-  .review:last-child{border-right:0; margin-right:0; padding-right:0;}
-  .stars{color:var(--accent); letter-spacing:4px; font-size:13px; margin-bottom:18px;}
-  .review p{font-family:var(--serif); color:var(--ink); font-size:23px; line-height:1.35; font-weight:500; margin-bottom:20px;}
-  .review .who{font-weight:700; font-size:10px; letter-spacing:.26em; color:var(--muted); text-transform:uppercase;}
-  .reviews > .wrap{max-width:1140px;}
+  /* reviews: pull quotes */
+  .rev-tag{display:inline-block; border:1px solid var(--hair); padding:6px 12px; margin-left:12px; letter-spacing:.2em; color:var(--mut-d);}
+  .revs{display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); grid-template-rows:auto auto; gap:0 clamp(40px,6vw,96px);}
+  .review{padding:0 0 36px; margin-bottom:36px; border-bottom:1px solid var(--line-d); position:relative;}
+  .review:first-child{grid-row:1/3; border-bottom:0; margin-bottom:0; padding-bottom:0;}
+  .review:last-child{border-bottom:0; margin-bottom:0;}
+  .review:first-child::before{content:"\201C"; display:block; font-family:var(--serif); font-size:clamp(120px,14vw,220px); line-height:.62; color:var(--gold); height:.4em; margin-bottom:.25em;}
+  .stars{color:var(--gold); letter-spacing:5px; font-size:13px; margin-bottom:16px;}
+  .review p{font-family:var(--serif); font-style:italic; font-weight:500; font-size:clamp(22px,2.2vw,30px); line-height:1.25; margin-bottom:18px; letter-spacing:-.005em;}
+  .review:first-child p{font-size:clamp(32px,4.4vw,62px); line-height:1.08; letter-spacing:-.015em;}
+  .review .who{font-weight:700; font-size:10px; letter-spacing:.28em; color:var(--mut-d); text-transform:uppercase;}
+  .revs-foot{margin-top:56px; padding-top:28px; border-top:1px solid var(--line-d);}
 
   /* faq */
-  .faq{max-width:1092px; margin:0 auto; border-top:1px solid var(--line);}
+  .faqwrap{display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:clamp(32px,6vw,96px); align-items:start;}
+  .faqwrap .head{display:block; margin:0; border-top:0; padding-top:0; position:sticky; top:calc(var(--hdr) + 32px);}
+  .faqwrap .head::before{content:""; display:block; width:56px; height:1px; background:var(--gold); margin-bottom:22px;}
+  .faqwrap .head p{margin-top:20px;}
+  .faq{border-top:1px solid var(--ink);}
   .faq details{border-bottom:1px solid var(--line);}
-  .faq summary{cursor:pointer; font-family:var(--serif); font-weight:500; list-style:none; font-size:clamp(21px,2.4vw,28px); line-height:1.25; padding:22px 48px 22px 0; min-height:44px; position:relative;}
+  .faq summary{cursor:pointer; font-family:var(--serif); font-weight:500; list-style:none; font-size:clamp(21px,2.3vw,30px); line-height:1.2; letter-spacing:-.01em; padding:24px 52px 24px 0; min-height:44px; position:relative;}
   .faq summary::-webkit-details-marker{display:none;}
-  .faq summary::after{content:"+"; position:absolute; right:0; top:22px; font-family:var(--sans); font-weight:300; font-size:28px; line-height:1; color:var(--accent);}
-  .faq details[open] summary::after{content:"–";}
-  .faq p{margin:-8px 0 26px; color:var(--muted); font-size:15px; max-width:640px;}
-  .faq p a{color:var(--accent);}
+  .faq summary::before,.faq summary::after{content:""; position:absolute; right:6px; top:50%; width:18px; height:1.5px; background:var(--ox); transition:transform .35s var(--ease);}
+  .faq summary::after{transform:rotate(90deg);}
+  .faq details[open] summary::after{transform:rotate(0);}
+  .faq details[open] summary::before{transform:rotate(180deg);}
+  .faq p{margin:-6px 0 28px; color:var(--mut); font-size:15px; max-width:56ch;}
+  .faq p a{color:var(--ox); font-weight:600;}
 
   /* contact */
-  #contact{border-top:1px solid var(--line);}
-  .map-contact{display:grid; grid-template-columns:1.4fr 1fr; gap:56px; max-width:1092px; margin:0 auto; align-items:stretch;}
-  .map-contact iframe{width:100%; height:100%; min-height:320px; border:1px solid var(--accent-soft); padding:6px; background:var(--bg); filter:grayscale(1) invert(90%);}
-  .contact-details{text-align:left; padding:8px 0; display:flex; flex-direction:column; justify-content:center; align-items:flex-start;}
-  .contact-details p{color:var(--muted); margin-bottom:22px; font-size:15px;}
-  .contact-details p:first-child{font-family:var(--serif); color:var(--ink); font-size:30px; line-height:1.1;}
-  .contact-details p a{color:var(--accent);}
+  #contact{border-top:1px solid var(--hair); padding-bottom:120px;}
+  .map-contact{display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); gap:clamp(32px,5vw,72px); align-items:stretch;}
+  .contact-details{display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap:6px;}
+  .contact-details .big{font-family:var(--serif); font-size:clamp(34px,3.6vw,52px); line-height:1.05; letter-spacing:-.02em; margin-bottom:22px;}
+  .contact-details .big small{display:block; font-family:var(--sans); font-size:11px; letter-spacing:.28em; text-transform:uppercase; font-weight:700; color:var(--ox); margin-bottom:14px;}
   .contact-details .btn{margin-bottom:28px;}
-  footer{background:#000; color:var(--muted); padding:48px 24px 60px; text-align:center; font-size:11px; letter-spacing:.22em; text-transform:uppercase; border-top:1px solid var(--accent-soft);}
-  footer a{color:var(--accent); text-decoration:none;}
-  .sticky-cta{position:fixed; bottom:0; left:0; right:0; background:#000; padding:12px 20px; display:none; justify-content:center; gap:12px; z-index:40; border-top:1px solid var(--accent-soft); box-shadow:0 -8px 24px rgba(0,0,0,.5);}
-  .sticky-cta a{flex:1; text-align:center; max-width:280px;}
+  .contact-details p{color:var(--mut); font-size:15px;}
+  .contact-details p a{color:var(--ox); font-weight:600;}
+  .map-facade{position:relative; width:100%; min-height:380px; border:1px solid var(--hair); padding:8px; background:var(--ivory);}
+  .map-facade__panel{height:100%; min-height:362px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:6px; padding:24px; background:var(--ink); color:var(--ivory);}
+  .map-facade__name{font-family:var(--serif); font-size:34px; line-height:1.1; letter-spacing:-.01em;}
+  .map-facade__addr{color:var(--mut-d); font-size:11px; letter-spacing:.24em; text-transform:uppercase; margin-bottom:18px;}
+  .map-facade__dir{color:var(--ivory); font-size:11px; letter-spacing:.22em; text-transform:uppercase; font-weight:700; margin-top:14px; border-bottom:1px solid var(--gold); padding-bottom:2px; text-decoration:none;}
+  .map-facade__dir:hover{border-bottom-color:var(--ivory);}
+  .map-facade__btn{background:var(--gold); color:var(--ink);}
+  .map-facade__btn:hover{background:var(--ivory); border-color:var(--ivory);}
+  .map-facade iframe{display:block; width:100%; height:100%; min-height:362px; border:0; filter:grayscale(.85) contrast(1.05);}
 
-  @media(max-width:960px){
-    .locations{grid-template-columns:1fr; max-width:520px;}
-    .review-grid{grid-template-columns:1fr; gap:36px;}
-    .review{border-right:0; margin-right:0; padding:0 0 36px; border-bottom:1px solid var(--line);}
-    .review:last-child{border-bottom:0; padding-bottom:0;}
+  /* footer masthead */
+  footer{background:var(--ink); color:var(--mut-d); padding:56px 0 48px; overflow:hidden;}
+  .foot__mast{font-family:var(--serif); font-weight:700; text-transform:uppercase; font-size:11.35vw; line-height:.86; letter-spacing:-.025em; text-align:center; white-space:nowrap; color:transparent; -webkit-text-stroke:1px var(--gold); padding-bottom:.06em; user-select:none;}
+  .foot__row{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px 28px; margin-top:34px; padding-top:22px; border-top:1px solid var(--hair); font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:600;}
+  footer a{color:var(--gold); text-decoration:underline; text-underline-offset:4px;}
+  .sticky-cta{position:fixed; bottom:0; left:0; right:0; background:var(--ink); padding:10px 16px; display:none; justify-content:space-between; align-items:center; gap:12px; z-index:40; border-top:1px solid var(--hair);}
+  .sticky-cta .btn{flex:1; max-width:260px;}
+  .sticky-cta .tlink{color:var(--ivory);}
+
+  /* motion: mouse only, fine pointers */
+  @media (hover:hover) and (pointer:fine){
+    .lookbook{cursor:grab;}
+    .coll:hover img{transform:scale(1.07); filter:none;}
+    .cover__photo:hover img{transform:scale(1.045);}
+    .fit__fig:hover img{transform:scale(1.05);}
+    .loc:hover{background:rgba(255,255,255,.4);}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .js .reveal{opacity:1; transform:none; transition:none;}
+    *,*::before,*::after{scroll-behavior:auto !important; transition:none !important; animation:none !important;}
+  }
+
+  @media(max-width:1100px){
+    .loc{grid-template-columns:clamp(48px,8vw,80px) minmax(0,1fr) minmax(0,1fr); }
+    .loc__actions{grid-column:2/4; grid-row:3; flex-direction:row; margin-top:22px;}
+    .loc__actions .btn{flex:1 1 0;}
+    .loc::before{grid-row:1/4;}
+  }
+  @media(max-width:900px){
+    .fit{grid-template-columns:1fr;}
+    .fit__fig{max-width:460px; margin-left:12px;}
+    .faqwrap{grid-template-columns:1fr;}
+    .faqwrap .head{position:static;}
+    .revs{grid-template-columns:1fr; display:block;}
+    .review:first-child{border-bottom:1px solid var(--line-d); padding-bottom:36px; margin-bottom:36px;}
+    .map-contact{grid-template-columns:1fr;}
   }
   @media(max-width:820px){
-    nav{display:none;} .burger{display:flex;}
-    section{padding:72px 0;}
-    .section__head{grid-template-columns:1fr; margin-bottom:40px;}
-    .occasion-panel{grid-template-columns:1fr; gap:16px;}
-    .occasion-panel p,.occasion-panel .btn,.occasion-panel h3,.occasion-list{grid-column:1; grid-row:auto;}
-    .owner{grid-template-columns:1fr; gap:48px;}
-    .owner img{max-width:360px; outline-offset:10px; margin-left:10px;}
-    .map-contact{grid-template-columns:1fr; gap:36px;}
-    .map-contact iframe{min-height:260px;}
+    nav{display:none;} .burger{display:flex;} .mobile-menu.open{display:flex;}
+    section{padding:76px 0;}
+    .head{grid-template-columns:1fr; margin-bottom:40px;}
     .sticky-cta{display:flex;}
-    footer{padding-bottom:100px;}
-    .hero::after{background:linear-gradient(180deg, rgba(12,11,10,.86) 0%, rgba(12,11,10,.93) 100%);}
-    .mobile-menu.open{display:flex;}
+    .js .sticky-cta{transform:translateY(110%); transition:transform .4s var(--ease);}
+    .js .sticky-cta.show{transform:none;}
+    footer{padding-bottom:104px;}
+    .map-facade,.map-facade__panel,.map-facade iframe{min-height:280px;}
+    .map-facade__panel{min-height:264px;}
+    .brand span{display:none;}
+
+    /* cover: separate mobile composition */
+    .cover{padding-bottom:28px;}
+    .cover{--mf:22.4vw;} .mast{line-height:.88;}
+    .mast__w{display:block;}
+    .mast__w + .mast__w{margin-left:0;}
+    .mast__w span:nth-child(n){animation-duration:.9s;}
+    .cover__body{height:auto; flex-direction:column; align-items:stretch; gap:0; padding-top:18px;}
+    .cover__col{display:contents;}
+    .cover__photo{order:1; height:auto; width:100%; aspect-ratio:1/1; outline:0;}
+    .cover__photo img{object-position:50% 30%;}
+    .cover__cta{order:2; align-items:stretch; margin:18px 0 6px;}
+    .cover__cta .btn{width:100%;}
+    .cl,.cover__dek{order:3; text-align:left;}
+    .cl{margin-top:22px;}
+    .cover__dek{margin-top:22px; max-width:none;}
+    .cover__col--r .cl__t,.cover__col--r .cl__s{margin-left:0;}
+    .cover__col--r{text-align:left;}
+    .cover__strip{padding-inline:24px;}
+    .cl--b{order:4;}
+    .cl--c{order:5;}
+    .cover__dek{order:3;}
+    .loc{grid-template-columns:48px minmax(0,1fr); }
+    .loc h3{grid-column:2;}
+    .loc > p{grid-column:2;}
+    .loc__details{grid-column:2; grid-row:3; margin-top:20px;}
+    .loc__actions{grid-column:2; grid-row:4;}
+    .loc::before{grid-row:1/3;}
+    .fit__cols{column-count:1; column-rule:0;}
+    .pull blockquote{text-indent:0;}
   }
-  @media(max-width:420px){
-    .topbar{letter-spacing:.14em;}
-    .hero__inner{padding-block:44px;}
-    .hero p{font-size:16px;}
-    .btn{padding:14px 22px;}
-    .sticky-cta{padding:10px 12px; gap:8px;}
-    .sticky-cta .btn{padding:15px 10px; letter-spacing:.12em;}
-    .header__inner{padding-inline:16px;}
-    .brand{font-size:20px;}
-    .hero__actions .btn{flex:1 1 100%;}
+  @media(max-width:480px){
+    .cover__strip .issue-l{display:none;} .cover__strip{letter-spacing:.14em;}
+    .cover__strip{justify-content:space-between;}
+    .wrap{padding-inline:20px;}
+    .loc__actions{flex-direction:column;}
+    .rev-tag{margin:10px 0 0; display:table;}
+    .lookbar .label{display:none;} .lookbar{justify-content:space-between;} .lookbar__track{display:none;}
   }
-  @media(max-width:360px){.brand{font-size:18px;} .topbar__inner{padding-inline:16px;}}
   footer a[href="privacy.html"]{text-decoration:underline; text-underline-offset:3px;}
-  /* Former inline style attributes (moved here for a stricter CSP) */
-  .u-s1{margin-top:44px !important;}
+  .mt-l{margin-top:48px;}
 </style>
 </head>
 <body>
 <script>if('IntersectionObserver' in window){document.documentElement.classList.add('js');}</script>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<div class="topbar">
-  <div class="wrap topbar__inner">
-    <p>Independent menswear · Northfield · Dudley · Wolverhampton</p>
-    <a href="tel:+441214780042">Northfield: 0121 478 0042</a>
-  </div>
-</div>
-
 <header id="siteHeader">
   <div class="wrap header__inner">
-    <a class="brand" href="#top">Little Italy <span>Menswear</span></a>
+    <a class="brand" href="#top">Little Italy<span>Menswear</span></a>
     <nav aria-label="Main">
       <ul>
         <li><a href="#collections">Collections</a></li>
@@ -276,52 +360,93 @@
 </header>
 
 <main id="main" tabindex="-1">
-<section class="hero" id="top">
-  <div class="hero__inner">
-    <span class="hero__tag">Independent Menswear · Three Locations</span>
-    <h1>Your occasion.<br><em>Your kind of style.</em></h1>
-    <p>From a wedding invitation to your next interview, start with Little Italy Menswear in Northfield, Dudley or Wolverhampton.</p>
-    <div class="hero__actions">
-      <!-- PLACEHOLDER: confirm fitting appointments are available before publishing -->
-      <a href="tel:+441214780042" class="btn btn--accent">Call to book a fitting</a>
-      <!-- /PLACEHOLDER -->
-      <a href="#collections" class="btn btn--outline">View Collections</a>
+<section class="cover" id="top">
+  <div class="wrap">
+    <div class="cover__strip">
+      <span class="issue-l">Independent menswear</span>
+      <span class="issue">Nº 03</span>
+      <a href="tel:+441214780042">Northfield: 0121 478 0042</a>
+    </div>
+    <h1 class="mast" id="mast" aria-label="Little Italy Menswear"><span class="mast__w" aria-hidden="true"><span>L</span><span>I</span><span>T</span><span>T</span><span>L</span><span>E</span></span><span class="mast__w" aria-hidden="true"><span>I</span><span>T</span><span>A</span><span>L</span><span>Y</span></span></h1>
+    <div class="cover__body">
+      <div class="cover__col cover__col--l">
+        <a class="cl cl--a" href="#fitting"><span class="cl__no">p. 04</span><span class="cl__t">Suits for the big day</span><span class="cl__s">Weddings, proms, funerals, interviews.</span></a>
+        <a class="cl cl--b" href="#collections"><span class="cl__no">p. 02</span><span class="cl__t">The lookbook</span><span class="cl__s">Suits, formalwear, smart casual and made-to-measure.</span></a>
+      </div>
+      <figure class="cover__photo">
+        <img src="images/6765639-w800-cc16e6.webp" srcset="images/6765639-w800-cc16e6.webp 800w, images/6765639-w1280-031407.webp 1280w" sizes="(max-width:820px) 100vw, 420px" width="800" height="1200" alt="A black suit jacket on a tailor's mannequin with a tape measure draped over it, in a bright fitting room" fetchpriority="high" decoding="async" />
+      </figure>
+      <div class="cover__col cover__col--r">
+        <p class="cover__dek">From a wedding invitation to your next interview, start with Little Italy Menswear in Northfield, Dudley or Wolverhampton.</p>
+        <a class="cl cl--c" href="#locations"><span class="cl__no">p. 06</span><span class="cl__t">Three shops: Northfield · Dudley · Wolverhampton</span></a>
+        <div class="cover__cta">
+          <!-- PLACEHOLDER: confirm fitting appointments are available before publishing -->
+          <a href="tel:+441214780042" class="btn">Book a fitting <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+          <!-- /PLACEHOLDER -->
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="collections">
+<section id="collections" class="on-ink">
   <div class="wrap">
-    <div class="section__head reveal">
+    <div class="head reveal">
+      <span class="label">Nº 03 · The lookbook</span>
       <h2>Our Collections</h2>
       <p>Start with the look you have in mind, then call Northfield to ask about current styles and sizes.</p>
     </div>
-    <p class="lookbook-hint">The lookbook · scroll or swipe</p>
   </div>
-    <div class="lookbook reveal" role="region" aria-label="Collections lookbook, scrollable" tabindex="0">
-      <!-- PLACEHOLDER: confirm suits, formalwear and smart-casual ranges with the business -->
-      <div class="coll"><div class="coll__img"><img src="images/6050409-w400-h500-ea28dd.webp" srcset="images/6050409-w300-h375-bcdaaa.webp 300w, images/6050409-w400-h500-ea28dd.webp 400w, images/6050409-w600-h750-667714.webp 600w" sizes="(max-width:380px) 78vw, 300px" width="400" height="500" alt="Fitting a tailored suit" loading="lazy" decoding="async" /></div><div class="coll__label">Suits<small>Two and three-piece, cut for how you actually wear it — not just how it looks on the rack.</small></div></div>
-      <div class="coll"><div class="coll__img"><img src="images/6050435-w400-h500-016232.webp" srcset="images/6050435-w300-h375-a4713a.webp 300w, images/6050435-w400-h500-016232.webp 400w, images/6050435-w600-h750-d90f92.webp 600w" sizes="(max-width:380px) 78vw, 300px" width="400" height="500" alt="Shopping for shirts and suits" loading="lazy" decoding="async" /></div><div class="coll__label">Formalwear<small>Shirts, ties and accessories picked to actually go with what you already own.</small></div></div>
-      <div class="coll"><div class="coll__img"><img src="images/6050440-w400-h500-a02284.webp" srcset="images/6050440-w300-h375-449115.webp 300w, images/6050440-w400-h500-a02284.webp 400w, images/6050440-w600-h750-400211.webp 600w" sizes="(max-width:380px) 78vw, 300px" width="400" height="500" alt="Browsing menswear in shop" loading="lazy" decoding="async" /></div><div class="coll__label">Smart Casual<small>For the in-between days — dressed up enough for the office, not stiff enough for the weekend.</small></div></div>
-      <!-- /PLACEHOLDER -->
-      <!-- PLACEHOLDER: confirm made-to-measure availability and participating branches -->
-      <div class="coll"><div class="coll__img"><img src="images/6765639-w400-h500-f079f5.webp" srcset="images/6765639-w300-h375-3c6b6b.webp 300w, images/6765639-w400-h500-f079f5.webp 400w, images/6765639-w600-h750-a2a33a.webp 600w" sizes="(max-width:380px) 78vw, 300px" width="400" height="500" alt="Suit jacket with tape measure" loading="lazy" decoding="async" /></div><div class="coll__label">Made-to-Measure<small>Looking for a more personal fit? Ask about availability at your preferred branch.</small></div></div>
-      <!-- /PLACEHOLDER -->
-    </div>
+  <div class="lookbook" id="lookbook" role="region" aria-label="Collections lookbook, scrollable" tabindex="0">
+    <!-- PLACEHOLDER: confirm suits, formalwear and smart-casual ranges with the business -->
+    <div class="coll"><div class="coll__n" aria-hidden="true"></div><div class="coll__img"><img src="images/6050409-w400-h500-ea28dd.webp" srcset="images/6050409-w300-h375-bcdaaa.webp 300w, images/6050409-w400-h500-ea28dd.webp 400w, images/6050409-w600-h750-667714.webp 600w" sizes="(max-width:380px) 76vw, 370px" width="400" height="500" alt="Fitting a tailored suit" loading="lazy" decoding="async" draggable="false" /></div><div class="coll__label">Suits<small>Two and three-piece, cut for how you actually wear it — not just how it looks on the rack.</small></div></div>
+    <div class="coll"><div class="coll__n" aria-hidden="true"></div><div class="coll__img"><img src="images/6050435-w400-h500-016232.webp" srcset="images/6050435-w300-h375-a4713a.webp 300w, images/6050435-w400-h500-016232.webp 400w, images/6050435-w600-h750-d90f92.webp 600w" sizes="(max-width:380px) 76vw, 370px" width="400" height="500" alt="Shopping for shirts and suits" loading="lazy" decoding="async" draggable="false" /></div><div class="coll__label">Formalwear<small>Shirts, ties and accessories picked to actually go with what you already own.</small></div></div>
+    <div class="coll"><div class="coll__n" aria-hidden="true"></div><div class="coll__img"><img src="images/6050440-w400-h500-a02284.webp" srcset="images/6050440-w300-h375-449115.webp 300w, images/6050440-w400-h500-a02284.webp 400w, images/6050440-w600-h750-400211.webp 600w" sizes="(max-width:380px) 76vw, 370px" width="400" height="500" alt="Browsing menswear in shop" loading="lazy" decoding="async" draggable="false" /></div><div class="coll__label">Smart Casual<small>For the in-between days — dressed up enough for the office, not stiff enough for the weekend.</small></div></div>
+    <!-- /PLACEHOLDER -->
+    <!-- PLACEHOLDER: confirm made-to-measure availability and participating branches -->
+    <div class="coll"><div class="coll__n" aria-hidden="true"></div><div class="coll__img"><img src="images/6765639-w400-h500-f079f5.webp" srcset="images/6765639-w300-h375-3c6b6b.webp 300w, images/6765639-w400-h500-f079f5.webp 400w, images/6765639-w600-h750-a2a33a.webp 600w" sizes="(max-width:380px) 76vw, 370px" width="400" height="500" alt="Suit jacket with tape measure" loading="lazy" decoding="async" draggable="false" /></div><div class="coll__label">Made-to-Measure<small>Looking for a more personal fit? Ask about availability at your preferred branch.</small></div></div>
+    <!-- /PLACEHOLDER -->
+  </div>
   <div class="wrap">
-    <p class="collection-contact"><a href="tel:+441214780042" class="btn btn--outline">Ask Northfield about the range</a></p>
-    <div class="occasion-panel reveal">
-      <h3>Dress for the day ahead</h3>
-      <ul class="occasion-list"><li>Weddings</li><li>Proms</li><li>Funerals</li><li>Interviews</li></ul>
-      <p>A wedding colour scheme, a first prom suit, something understated for a funeral or a smart interview outfit: tell Little Italy what the day calls for. Have your date, usual size and budget to hand when you call Northfield.</p>
-      <a href="tel:+441214780042" class="btn btn--accent">Suit for an occasion?</a>
+    <div class="lookbar">
+      <span class="label"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"><path d="M3 12h18M7 7l-5 5 5 5M17 7l5 5-5 5"/></svg>Drag or swipe</span>
+      <div class="lookbar__track" aria-hidden="true"><div class="lookbar__fill" id="lookFill"></div></div>
+      <a href="tel:+441214780042" class="tlink">Ask Northfield about the range</a>
+    </div>
+  </div>
+</section>
+
+<section id="fitting" class="fitting">
+  <div class="wrap">
+    <div class="fit">
+      <figure class="fit__fig reveal">
+        <div class="frame"><img src="images/37332553-w500-h625-d4111d.webp" srcset="images/37332553-w360-h450-aac8cd.webp 360w, images/37332553-w500-h625-d4111d.webp 500w, images/37332553-w800-h1000-51eb7c.webp 800w" sizes="(max-width:900px) 440px, 460px" width="500" height="625" alt="Tailor working on a garment" loading="lazy" decoding="async" /></div>
+        <figcaption>The fitting · p. 04</figcaption>
+      </figure>
+      <div class="fit__text reveal">
+        <span class="label">Feature</span>
+        <h3>Tell us what the <em>day</em> calls for.</h3>
+        <div class="fit__cols">
+          <p>A wedding colour scheme, a first prom suit, something understated for a funeral or a smart interview outfit: whatever the occasion, start by telling Little Italy what the day calls for.</p>
+          <p>Have your date, your usual size and your budget to hand when you call Northfield, and book a fitting. For a wedding or prom, call as early as you can.</p>
+        </div>
+        <ul class="occasions"><li>Weddings</li><li>Proms</li><li>Funerals</li><li>Interviews</li></ul>
+        <a href="tel:+441214780042" class="btn">Suit for an occasion? <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        <div class="pull">
+          <!-- PLACEHOLDER: replace with a real quote and name from the owner or head tailor -->
+          <blockquote>"A good suit should feel like it was made for you — because it was. That's the standard across all three of our stores."</blockquote>
+          <div class="who">— Head Tailor, Little Italy Menswear</div>
+          <!-- /PLACEHOLDER -->
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="locations">
   <div class="wrap">
-    <div class="section__head reveal">
+    <div class="head reveal">
+      <span class="label">Contents · p. 06</span>
       <h2>Find your Little Italy</h2>
       <p>Three stores across the West Midlands. Pick your nearest and call to book a fitting.</p>
     </div>
@@ -340,8 +465,8 @@
         </dl>
         <!-- Northfield phone 0121 478 0042 is real; confirm it is the Northfield branch line -->
         <div class="loc__actions">
-          <a href="tel:+441214780042" class="btn btn--accent">Call Northfield</a>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Northfield" class="btn btn--outline" target="_blank" rel="noopener" aria-label="Directions to Little Italy Menswear Northfield on Google Maps">Directions</a>
+          <a href="tel:+441214780042" class="btn">Call Northfield</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Northfield" class="btn btn--line" target="_blank" rel="noopener" aria-label="Directions to Little Italy Menswear Northfield on Google Maps">Directions</a>
         </div>
       </article>
       <article class="loc">
@@ -358,9 +483,9 @@
         </dl>
         <div class="loc__actions">
           <!-- PLACEHOLDER: Dudley direct phone number needed; link uses the Northfield number meanwhile -->
-          <a href="tel:+441214780042" class="btn btn--accent">Call to book</a>
+          <a href="tel:+441214780042" class="btn">Call to book</a>
           <!-- /PLACEHOLDER -->
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Dudley" class="btn btn--outline" target="_blank" rel="noopener" aria-label="Directions to Little Italy Menswear Dudley on Google Maps">Directions</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Dudley" class="btn btn--line" target="_blank" rel="noopener" aria-label="Directions to Little Italy Menswear Dudley on Google Maps">Directions</a>
         </div>
       </article>
       <article class="loc">
@@ -377,108 +502,106 @@
         </dl>
         <div class="loc__actions">
           <!-- PLACEHOLDER: Wolverhampton direct phone number needed; link uses the Northfield number meanwhile -->
-          <a href="tel:+441214780042" class="btn btn--accent">Call to book</a>
+          <a href="tel:+441214780042" class="btn">Call to book</a>
           <!-- /PLACEHOLDER -->
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Wolverhampton" class="btn btn--outline" target="_blank" rel="noopener" aria-label="Directions to Little Italy Menswear Wolverhampton on Google Maps">Directions</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Wolverhampton" class="btn btn--line" target="_blank" rel="noopener" aria-label="Directions to Little Italy Menswear Wolverhampton on Google Maps">Directions</a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="owner-section">
+<section id="reviews" class="on-ink">
   <div class="wrap">
-    <div class="owner reveal">
-      <img src="images/37332553-w500-h625-d4111d.webp" srcset="images/37332553-w360-h450-aac8cd.webp 360w, images/37332553-w500-h625-d4111d.webp 500w, images/37332553-w800-h1000-51eb7c.webp 800w" sizes="(max-width:900px) 360px, 460px" width="500" height="625" alt="Tailor working on a garment" loading="lazy" decoding="async" />
-      <div>
-        <!-- PLACEHOLDER: replace with a real quote and name from the owner or head tailor -->
-        <blockquote>"A good suit should feel like it was made for you — because it was. That's the standard across all three of our stores."</blockquote>
-        <div class="who">— Head Tailor, Little Italy Menswear</div>
+    <div class="head reveal">
+      <span class="label">What locals say<span class="rev-tag">Demo reviews, placeholders</span></span>
+      <h2>Kind words from the shop floor</h2>
+      <p>Fittings, formalwear and the odd last-minute wedding rescue.</p>
+    </div>
+    <div class="revs reveal">
+      <!-- PLACEHOLDER: replace with real Google review (Northfield) -->
+      <div class="review"><div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div><p>"Got fitted for a wedding suit and the attention to detail was spot on."</p><div class="who">— James, Local regular</div></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: replace with real Google review (Dudley) -->
+      <div class="review"><div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div><p>"Great range of formalwear, staff know exactly what suits your build."</p><div class="who">— Aaron, Local regular</div></div>
+      <!-- /PLACEHOLDER -->
+      <!-- PLACEHOLDER: replace with real Google review (Wolverhampton) -->
+      <div class="review"><div class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</div><p>"Good quality suits at a fair price, quick turnaround on alterations."</p><div class="who">— Daniel, Local regular</div></div>
+      <!-- /PLACEHOLDER -->
+    </div>
+    <div class="revs-foot">
+      <!-- PLACEHOLDER: swap for the direct Google Business Profile review link when known -->
+      <a class="btn btn--line" href="https://www.google.com/search?q=Little+Italy+Menswear+Northfield+reviews" target="_blank" rel="noopener">See all reviews on Google →</a>
+      <!-- /PLACEHOLDER -->
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="faqwrap">
+      <div class="head reveal">
+        <span class="label">Letters &amp; questions</span>
+        <h2>Common Questions</h2>
+        <p>What customers usually ask before visiting.</p>
+      </div>
+      <div class="faq reveal">
+        <!-- PLACEHOLDER: confirm made-to-measure lead time -->
+        <details><summary>How long does made-to-measure take?</summary><p>Typically 2-3 weeks depending on the garment and any alterations needed — so if it's for a wedding or prom, call us as early as you can.</p></details>
+        <!-- /PLACEHOLDER -->
+        <!-- PLACEHOLDER: confirm cross-store alterations policy -->
+        <details><summary>Can I use any store for alterations?</summary><p>Yes, all three stores offer alteration services regardless of where you bought the item.</p></details>
+        <!-- /PLACEHOLDER -->
+        <!-- PLACEHOLDER: confirm wedding party / group fittings -->
+        <details><summary>Do you offer wedding party fittings?</summary><p>Yes, we regularly fit full wedding parties — book ahead for group appointments.</p></details>
+        <!-- /PLACEHOLDER -->
+        <!-- PLACEHOLDER: confirm walk-in policy -->
+        <details><summary>Do I need an appointment?</summary><p>Walk-ins are welcome, but booking ahead is recommended for fittings and alterations. <a href="tel:+441214780042">Call 0121 478 0042</a> to book.</p></details>
         <!-- /PLACEHOLDER -->
       </div>
     </div>
   </div>
 </section>
 
-<section id="reviews" class="reviews">
-  <div class="wrap">
-    <div class="section__head reveal">
-      <span class="rating-badge">What locals say</span>
-      <h2>Kind words from the shop floor</h2>
-      <p>Fittings, formalwear and the odd last-minute wedding rescue.</p>
-    </div>
-  </div>
-  <div class="review-grid reveal">
-    <!-- PLACEHOLDER: replace with real Google review (Northfield) -->
-    <div class="review"><div class="stars">★★★★★</div><p>"Got fitted for a wedding suit and the attention to detail was spot on."</p><div class="who">— James, Local regular</div></div>
-    <!-- /PLACEHOLDER -->
-    <!-- PLACEHOLDER: replace with real Google review (Dudley) -->
-    <div class="review"><div class="stars">★★★★★</div><p>"Great range of formalwear, staff know exactly what suits your build."</p><div class="who">— Aaron, Local regular</div></div>
-    <!-- /PLACEHOLDER -->
-    <!-- PLACEHOLDER: replace with real Google review (Wolverhampton) -->
-    <div class="review"><div class="stars">★★★★☆</div><p>"Good quality suits at a fair price, quick turnaround on alterations."</p><div class="who">— Daniel, Local regular</div></div>
-    <!-- /PLACEHOLDER -->
-  </div>
-  <div class="wrap u-s1">
-    <!-- PLACEHOLDER: swap for the direct Google Business Profile review link when known -->
-    <a class="btn btn--outline" href="https://www.google.com/search?q=Little+Italy+Menswear+Northfield+reviews" target="_blank" rel="noopener">See all reviews on Google →</a>
-    <!-- /PLACEHOLDER -->
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <div class="section__head reveal">
-      <h2>Common Questions</h2>
-      <p>What customers usually ask before visiting.</p>
-    </div>
-    <div class="faq reveal">
-      <!-- PLACEHOLDER: confirm made-to-measure lead time -->
-      <details><summary>How long does made-to-measure take?</summary><p>Typically 2-3 weeks depending on the garment and any alterations needed — so if it's for a wedding or prom, call us as early as you can.</p></details>
-      <!-- /PLACEHOLDER -->
-      <!-- PLACEHOLDER: confirm cross-store alterations policy -->
-      <details><summary>Can I use any store for alterations?</summary><p>Yes, all three stores offer alteration services regardless of where you bought the item.</p></details>
-      <!-- /PLACEHOLDER -->
-      <!-- PLACEHOLDER: confirm wedding party / group fittings -->
-      <details><summary>Do you offer wedding party fittings?</summary><p>Yes, we regularly fit full wedding parties — book ahead for group appointments.</p></details>
-      <!-- /PLACEHOLDER -->
-      <!-- PLACEHOLDER: confirm walk-in policy -->
-      <details><summary>Do I need an appointment?</summary><p>Walk-ins are welcome, but booking ahead is recommended for fittings and alterations. <a href="tel:+441214780042">Call 0121 478 0042</a> to book.</p></details>
-      <!-- /PLACEHOLDER -->
-    </div>
-  </div>
-</section>
-
 <section id="contact">
-  <div class="wrap section__head reveal">
-    <h2>Book a Fitting</h2>
-    <p>Tell us what you're dressing for, when you need it and the look you have in mind.</p>
-  </div>
-  <div class="wrap map-contact reveal">
-    <div class="map-facade" id="mapFacade" data-src="https://maps.google.com/maps?q=Northfield,+Birmingham&z=15&output=embed" data-title="Map to Little Italy Menswear Northfield">
-      <div class="map-facade__panel">
-        <p class="map-facade__name">Little Italy Menswear</p>
-        <p class="map-facade__addr">Northfield, Birmingham</p>
-        <button type="button" class="btn btn--outline map-facade__btn" id="mapShow">Show map</button>
-        <a class="map-facade__dir" href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Northfield+Birmingham" target="_blank" rel="noopener">Get directions</a>
-      </div>
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="label">Back page</span>
+      <h2>Book a Fitting</h2>
+      <p>Tell us what you're dressing for, when you need it and the look you have in mind.</p>
     </div>
-    <div class="contact-details">
-      <p>Northfield · 0121 478 0042</p>
-      <a href="tel:+441214780042" class="btn btn--accent">Call to book a fitting</a>
-      <p>Visiting Dudley or Wolverhampton? See <a href="#locations">branch details and directions</a>.</p>
+    <div class="map-contact reveal">
+      <div class="map-facade" id="mapFacade" data-src="https://maps.google.com/maps?q=Northfield,+Birmingham&z=15&output=embed" data-title="Map to Little Italy Menswear Northfield">
+        <div class="map-facade__panel">
+          <p class="map-facade__name">Little Italy Menswear</p>
+          <p class="map-facade__addr">Northfield, Birmingham</p>
+          <button type="button" class="btn map-facade__btn" id="mapShow">Show map</button>
+          <a class="map-facade__dir" href="https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Menswear+Northfield+Birmingham" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="contact-details">
+        <p class="big"><small>Northfield</small>0121 478 0042</p>
+        <a href="tel:+441214780042" class="btn">Book a fitting <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        <p>Visiting Dudley or Wolverhampton? See <a href="#locations">branch details and directions</a>.</p>
+      </div>
     </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <p>&copy; 2026 Little Italy Menswear, Northfield · Dudley · Wolverhampton · <a href="privacy.html">Privacy notice</a></p>
+  <div class="wrap">
+    <div class="foot__mast" aria-hidden="true">Little Italy</div>
+    <div class="foot__row">
+      <span>Menswear · Northfield · Dudley · Wolverhampton</span>
+      <span>&copy; 2026 Little Italy Menswear · <a href="privacy.html">Privacy notice</a></span>
+    </div>
+  </div>
 </footer>
 
-<div class="sticky-cta">
-  <a href="tel:+441214780042" class="btn btn--accent">Call Northfield</a>
-  <a href="#locations" class="btn btn--outline">Find a Store</a>
+<div class="sticky-cta" id="stickyCta">
+  <a href="tel:+441214780042" class="btn">Book a fitting</a>
+  <a href="#locations" class="tlink">Find a store</a>
 </div>
 
 <script>
@@ -497,8 +620,6 @@
     if(e.key === 'Escape' && menu.classList.contains('open')){ setMenu(false); burger.focus(); }
   });
   desktop.addEventListener('change', (e) => { if(e.matches) setMenu(false); });
-
-  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10), { passive: true });
 
   function smoothScrollTo(id){
     const target = document.getElementById(id);
@@ -522,23 +643,51 @@
   if(document.documentElement.classList.contains('js')){
     const io = new IntersectionObserver((entries) => {
       entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  }
-</script>
 
-<style>
-  .owner img{height:auto;}
-  .map-facade{position:relative; width:100%; min-height:320px; border:1px solid var(--accent-soft); padding:6px; background:var(--bg);}
-  .map-facade__panel{height:100%; min-height:306px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:6px; padding:24px; background:var(--card); border:1px solid var(--line);}
-  .map-facade__name{font-family:var(--serif); color:var(--ink); font-size:30px; line-height:1.1;}
-  .map-facade__addr{color:var(--muted); font-size:11px; letter-spacing:.2em; text-transform:uppercase; margin-bottom:18px;}
-  .map-facade__dir{color:var(--accent); font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; margin-top:14px; border-bottom:1px solid var(--accent-soft); padding-bottom:2px; text-decoration:none;}
-  .map-facade__dir:hover,.map-facade__dir:focus-visible{border-bottom-color:var(--accent);}
-  .map-facade__btn:focus-visible,.map-facade__dir:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
-  .map-facade iframe{display:block; width:100%; height:100%; min-height:306px; border:0; filter:grayscale(1) invert(90%);}
-  @media (max-width:900px){.map-facade{min-height:260px;} .map-facade__panel,.map-facade iframe{min-height:246px;}}
-</style>
+    /* mobile sticky CTA only once the cover CTA has scrolled away */
+    const cta = document.getElementById('stickyCta');
+    const coverCta = document.querySelector('.cover__cta');
+    if(cta && coverCta){
+      new IntersectionObserver((entries) => {
+        entries.forEach(e => cta.classList.toggle('show', !e.isIntersecting));
+      }).observe(coverCta);
+    }
+  }
+
+  /* lookbook: scroll progress + mouse drag (fine pointers only) */
+  (function(){
+    const lb = document.getElementById('lookbook'), fill = document.getElementById('lookFill');
+    if(!lb) return;
+    function progress(){
+      const max = lb.scrollWidth - lb.clientWidth;
+      const r = max > 0 ? lb.scrollLeft / max : 1;
+      if(fill) fill.style.transform = 'scaleX(' + (0.12 + 0.88 * r).toFixed(3) + ')';
+    }
+    lb.addEventListener('scroll', progress, { passive: true });
+    window.addEventListener('resize', progress);
+    progress();
+    if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+    let down = false, sx = 0, sl = 0;
+    lb.addEventListener('pointerdown', (e) => {
+      if(e.pointerType !== 'mouse' || e.button !== 0) return;
+      down = true; sx = e.clientX; sl = lb.scrollLeft;
+    });
+    window.addEventListener('pointermove', (e) => {
+      if(!down) return;
+      const dx = e.clientX - sx;
+      if(Math.abs(dx) > 4) lb.classList.add('drag');
+      lb.scrollLeft = sl - dx;
+    });
+    function end(){
+      if(!down) return;
+      down = false; lb.classList.remove('drag');
+    }
+    window.addEventListener('pointerup', end);
+    window.addEventListener('pointercancel', end);
+  })();
+</script>
 <script>
 (function(){
   var f=document.getElementById('mapFacade'), b=document.getElementById('mapShow');
